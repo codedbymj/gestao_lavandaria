@@ -23,7 +23,7 @@ As credenciais encontram-se em `config/config.php`:
 
 ```php
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'gestao_lavandaria');
+define('DB_NAME', 'lavandaria_db');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 ```
@@ -50,7 +50,7 @@ define('DB_PASS', '');
 - O preço é copiado para `itens_servico` no momento do registo. Alterar o
   catálogo não modifica serviços antigos;
 - Um serviço deve possuir pelo menos uma peça;
-- O desconto não pode ultrapassar o subtotal;
+- O desconto é aplicado em percentagem (0% a 100%) sobre o subtotal;
 - As mudanças de estado seguem o fluxo definido pela aplicação;
 - Não é possível cancelar um serviço com pagamentos confirmados;
 - Apenas serviços prontos e totalmente pagos podem ser entregues;

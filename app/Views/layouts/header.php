@@ -29,7 +29,6 @@ $success = Session::flash('sucesso');
                 <a href="<?= BASE_URL ?>/dashboard">Dashboard</a>
                 <a href="<?= BASE_URL ?>/clientes">Clientes</a>
                 <a href="<?= BASE_URL ?>/servicos">Serviços</a>
-                <a href="<?= BASE_URL ?>/danos">Controlo de Peças</a>
                 <?php if (Session::hasRole(['Administrador', 'Gestor'])): ?>
                     <a href="<?= BASE_URL ?>/catalogo">Catálogo</a>
                     <a href="<?= BASE_URL ?>/relatorios">Relatórios</a>

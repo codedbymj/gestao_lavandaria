@@ -23,7 +23,6 @@ use App\Controllers\AuthController;
 use App\Controllers\BackupsController;
 use App\Controllers\CatalogoController;
 use App\Controllers\ClientesController;
-use App\Controllers\DanosController;
 use App\Controllers\DashboardController;
 use App\Controllers\FinanceiroController;
 use App\Controllers\LogsController;
@@ -94,8 +93,6 @@ $router->get('/backups', [BackupsController::class, 'index']);
 $router->post('/backups/criar', [BackupsController::class, 'create']);
 $router->get('/backups/download', [BackupsController::class, 'download']);
 $router->post('/backups/eliminar', [BackupsController::class, 'delete']);
-
-$router->get('/danos', [DanosController::class, 'index']);
 
 try {
     $router->dispatch($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']);

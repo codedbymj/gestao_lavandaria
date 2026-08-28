@@ -1,0 +1,6 @@
+# Ficheiros gerados em tempo de execução (não versionados)
+/storage/backups/*.sql
+
+# Ficheiros de sistema
+.DS_Store
+Thumbs.db
